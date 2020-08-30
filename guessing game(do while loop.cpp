@@ -8,33 +8,19 @@ int main()
     int guessLimit = 3;
     bool outOfGuesses = false;
 
-    do
-    {
-      if (guessLimit > 0 ) 
-      {
+    do{
+      if (guessLimit > 0 ){
         guessLimit--;
         cout << "Enter guess: ";
         cin >> guess;
-      }
-      else
+      } else
           {
               outOfGuesses = true;
           }
-          
-      
-
-        }
-
-    while (secretNum != guess && !outOfGuesses);
-
-if (outOfGuesses)
-{
+        } while (secretNum != guess && !outOfGuesses);
+if (outOfGuesses){
     cout << "You Lose!";
-}
-else
-{
-    cout << "YouWin!";
-}
-
+} else{
+    cout << "YouWin!";}
 return 0;
 }
